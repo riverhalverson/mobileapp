@@ -5,26 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".UI.CoursesList">
+    tools:context=".UI.TermEditor">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="91dp"
-        android:layout_height="31dp"
+        android:id="@+id/textView9"
+        android:layout_width="128dp"
+        android:layout_height="28dp"
         android:fontFamily="sans-serif-black"
-        android:text="Courses"
+        android:text="Term Editor"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
-
-    <Button
-        android:id="@+id/addcourse"
-        android:layout_width="137dp"
-        android:layout_height="42dp"
-        android:text="Add Course"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
