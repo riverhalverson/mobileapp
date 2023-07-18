@@ -7,6 +7,14 @@
     android:background="#FFFFFF"
     tools:context=".UI.TermDetails">
 
+    <Button
+        android:id="@+id/termsavebutton2"
+        android:layout_width="138dp"
+        android:layout_height="44dp"
+        android:text="Delete term"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="171dp"
@@ -124,10 +132,10 @@
 
     <Button
         android:id="@+id/termsavebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="139dp"
+        android:layout_height="45dp"
+        android:text="Save changes"
+        app:layout_constraintBottom_toTopOf="@+id/termsavebutton2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -136,5 +144,13 @@
         android:layout_height="75dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/newcoursebutton"
+        android:layout_width="166dp"
+        android:layout_height="40dp"
+        android:text="Add New Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -54,6 +54,17 @@ public class Repository {
         }
         return mAllCourses;
     }
+    public List<Assessment> getAllAssessments(){
+        databaseExecutor.execute(()->{
+            mAllAssessments = mAssessmentDAO.getAllAssessments();
+        });
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        return mAllAssessments;
+    }
     //need to add other get all methods for associated assessments and courses
     public void insert(Term term){
         databaseExecutor.execute(()->{

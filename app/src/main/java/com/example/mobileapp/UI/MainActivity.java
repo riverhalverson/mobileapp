@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.mobileapp.Database.Repository;
+import com.example.mobileapp.Entities.Assessment;
 import com.example.mobileapp.Entities.Course;
 import com.example.mobileapp.Entities.Term;
 import com.example.mobileapp.R;
@@ -21,13 +22,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Term term = new Term(0, "Term one", "12/1/1", "12/1/1");
 
-        Course course = new Course(0,1,"Math", "12/1/1",
-                "12/4/6", "Active", "Bill Nye",
-                "642-424,2422", "billnye@gmail.com", "asdasd");
-        Repository repository = new Repository(getApplication());
-        repository.insert(course);
+
+        //sample data
+        //Repository repository = new Repository(getApplication());
+        //repository.insert(assessment);
 
         Button termButton = findViewById(R.id.termsbutton);
         termButton.setOnClickListener(new View.OnClickListener(){
